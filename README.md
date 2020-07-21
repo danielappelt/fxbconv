@@ -22,7 +22,7 @@ FXB and FXP plugin preset formats are not very well supported in the open source
 bb fxb2fxp.clj foobar.fxb
 ```
 
-This will create individual FXP preset files named foobar.fxb_<n>.fxp with n being a running index over the included presets.
+This will create individual FXP preset files named foobar.fxb_&lt;n>.fxp with n being a running index over the included presets.
 
 ## Contributing
 
