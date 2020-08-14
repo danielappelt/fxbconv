@@ -1,6 +1,6 @@
-# fxb2fxp
+# fxbconv
 
-fxb2fxp is a [Babashka](https://github.com/borkdude/babashka) / Clojure script for converting a [FXB bulk preset](https://en.wikipedia.org/wiki/Virtual_Studio_Technology#Presets) file into individual FXP presets.
+fxbconv consists of two [Babashka](https://github.com/borkdude/babashka) / Clojure scripts for converting a [FXB bulk preset](https://en.wikipedia.org/wiki/Virtual_Studio_Technology#Presets) file into individual FXP, or [Carla](https://github.com/falkTX/Carla) preset files.
 
 ## Warning
 
@@ -14,7 +14,7 @@ FXB and FXP plugin preset formats are not very well supported in the open source
 
 1.) Install Babashka according to the provided [instructions](https://github.com/borkdude/babashka#installation).
 
-2.) Download fxb2fxp.clj from this repository, or clone this repository.
+2.) Download all .clj files from this repository, or clone this repository.
 
 ## Usage
 
@@ -23,6 +23,18 @@ bb fxb2fxp.clj foobar.fxb
 ```
 
 This will create individual FXP preset files named foobar.fxb_&lt;n>.fxp with n being a running index over the included presets.
+
+```bash
+bb fxb2carxs.clj foobar.fxb
+```
+
+This will create individual Carla preset files named foobar.fxb_&lt;n>.carxs with n being a running index over the included presets.
+
+
+## Related projects
+
+* [ardour2fxp](https://github.com/spotlightkid/ardour2fxp)
+* [fxbjs](https://github.com/zetadrums/fxbjs)
 
 ## Contributing
 
