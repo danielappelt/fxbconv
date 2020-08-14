@@ -8,7 +8,7 @@ This is still alpha software!
 
 ## Background
 
-FXB and FXP plugin preset formats are not very well supported in the open source world. This program follows a very simple plan. Without checking much of the internal structure it just splits up FXB bank preset files at the format's magic chunk sequence.
+FXB and FXP plugin preset formats are not very well supported in the open source world. This program follows a very simple plan. Without checking much of the internal structure it just splits up FXB bank preset files at the format's magic chunk sequence into separate FXP preset files. Furthermore, it supports the direct conversion of the FXP presets (without chunk data) in a FXB bank into Carla preset files.
 
 ## Installation
 
